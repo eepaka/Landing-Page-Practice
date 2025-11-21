@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Sivun asetukset */
+
+      * {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #000000;
+        text-align: center;
+        font-size: 36px;
+        z-index: 1;
+      }
+
+      .button-link {
+        background-color: #ee8700;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: #000000;
+      }
+
+      .button-link:hover {
+        color: #ffffff;
+      }
+    </style>
+    <title>HMTL Harjoitus</title>
+  </head>
+  <body>
+    <video muted autoplay loop>
+      <source src="/video/ocean.mp4" type="video/mp4" />
+      Your browser does not support the video tag
+    </video>
+
+    <div class="content">
+      <p>Tervetuloa sivuille</p>
+      <a class="button-link" href="#">tästä pääset sivuille</a>
+    </div>
+  </body>
+</html>
